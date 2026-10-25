@@ -1,0 +1,88 @@
+{
+ "thresholds": {
+  "supra": 0.220031149280593,
+  "parallel": 0.561207014344907,
+  "forgone": 0.05229948395596166,
+  "judge": 0.75,
+  "consist": 0.5454545454545454,
+  "punish": 0.09090909090909091,
+  "chan_dep": 0.021382745018211954
+ },
+ "rates": {
+  "A": {
+   "R1 parallel conduct only": 1.0,
+   "R2 conversation judge only": 0.95,
+   "R3 words + deeds": 0.95,
+   "R4 harm signal (supra-competitive)": 1.0,
+   "R5 plus factors (>=2 of 3)": 1.0,
+   "R6 plus factors + channel replay": 0.85
+  },
+  "B": {
+   "R1 parallel conduct only": 0.05,
+   "R2 conversation judge only": 0.0,
+   "R3 words + deeds": 0.0,
+   "R4 harm signal (supra-competitive)": 0.05,
+   "R5 plus factors (>=2 of 3)": 0.0,
+   "R6 plus factors + channel replay": 0.0
+  },
+  "C": {
+   "R1 parallel conduct only": 0.0,
+   "R2 conversation judge only": 0.6,
+   "R3 words + deeds": 0.0,
+   "R4 harm signal (supra-competitive)": 0.0,
+   "R5 plus factors (>=2 of 3)": 0.0,
+   "R6 plus factors + channel replay": 0.0
+  },
+  "D": {
+   "R1 parallel conduct only": 0.95,
+   "R2 conversation judge only": 0.0,
+   "R3 words + deeds": 0.0,
+   "R4 harm signal (supra-competitive)": 0.95,
+   "R5 plus factors (>=2 of 3)": 0.55,
+   "R6 plus factors + channel replay": 0.0
+  }
+ },
+ "n_per_case_test": 20,
+ "auc": {
+  "supra": {
+   "agree_AUC": 0.9199999999999999,
+   "harm_AUC": 0.999375
+  },
+  "parallel": {
+   "agree_AUC": 0.10666666666666666,
+   "harm_AUC": 0.04125000000000001
+  },
+  "forgone": {
+   "agree_AUC": 0.8466666666666667,
+   "harm_AUC": 0.79875
+  },
+  "judge": {
+   "agree_AUC": 0.8600000000000001,
+   "harm_AUC": 0.52
+  },
+  "consist": {
+   "agree_AUC": 1.0,
+   "harm_AUC": 0.75
+  },
+  "punish": {
+   "agree_AUC": 0.87,
+   "harm_AUC": 0.9040625
+  },
+  "chan_dep": {
+   "agree_AUC": 0.9391666666666667,
+   "harm_AUC": 0.741875
+  },
+  "corr (level correlation)": {
+   "agree_AUC": 0.06666666666666668,
+   "harm_AUC": 0.090625
+  }
+ },
+ "stress_E": {
+  "R1 parallel conduct only": 1.0,
+  "R2 conversation judge only": 0.0,
+  "R3 words + deeds": 0.0,
+  "R4 harm signal (supra-competitive)": 1.0,
+  "R5 plus factors (>=2 of 3)": 0.9,
+  "R6 plus factors + channel replay": 0.9
+ }
+}
